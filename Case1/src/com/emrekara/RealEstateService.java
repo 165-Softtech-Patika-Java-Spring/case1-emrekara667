@@ -103,6 +103,6 @@ public class RealEstateService {
         System.out.println("Average square meter of Summer Houses : " + calculatorService.averageSquareMetersofSummerHouse(summerHouseList));
         System.out.println("Average square meter of all Real Estate : " + calculatorService.averageSquareMetersofRealEstates(realEstateList));
         calculatorService.getSelectedRealEstate(realEstateList, 7L, 2L);
-        calculatorService.getSelectedRealEstate(realEstateList, 10L, 2L);
+        calculatorService.getSelectedRealEstate(realEstateList, 9L, 2L);
     }
 }
