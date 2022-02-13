@@ -59,7 +59,14 @@ public class CalculatorService {
             numberOfHouse++;
         }
 
-        return averageSquaremeter.divide(new BigDecimal(numberOfHouse), 2, RoundingMode.HALF_UP);
+        try{
+            averageSquaremeter.divide(new BigDecimal(numberOfHouse), 2, RoundingMode.HALF_UP);
+        }
+        catch (ArithmeticException exception){
+            exception.printStackTrace();
+        }
+
+        return averageSquaremeter;
     }
 
     public  BigDecimal averageSquareMetersofVilla(List<RealEstate> listVilla) {
@@ -71,7 +78,14 @@ public class CalculatorService {
             numberOfVillas++;
         }
 
-        return averageSquaremeter.divide(new BigDecimal(numberOfVillas), 2, RoundingMode.HALF_UP);
+        try{
+            averageSquaremeter.divide(new BigDecimal(numberOfVillas), 2, RoundingMode.HALF_UP);
+        }
+        catch (ArithmeticException exception){
+            exception.printStackTrace();
+        }
+
+        return averageSquaremeter;
     }
 
     public  BigDecimal averageSquareMetersofSummerHouse(List<RealEstate> listSummerHouse) {
@@ -83,7 +97,14 @@ public class CalculatorService {
             numberOfSummerHouse++;
         }
 
-        return averageSquaremeter.divide(new BigDecimal(numberOfSummerHouse), 2, RoundingMode.HALF_UP);
+        try{
+            averageSquaremeter.divide(new BigDecimal(numberOfSummerHouse), 2, RoundingMode.HALF_UP);
+        }
+        catch (ArithmeticException exception){
+            exception.printStackTrace();
+        }
+
+        return averageSquaremeter;
     }
 
     public  BigDecimal averageSquareMetersofRealEstates(List<RealEstate> listRealEstate) {
@@ -95,7 +116,14 @@ public class CalculatorService {
             numberOfRealEstate++;
         }
 
-        return averageSquaremeter.divide(new BigDecimal(numberOfRealEstate), 2, RoundingMode.HALF_UP);
+        try{
+            averageSquaremeter.divide(new BigDecimal(numberOfRealEstate), 2, RoundingMode.HALF_UP);
+        }
+        catch (ArithmeticException exception){
+            exception.printStackTrace();
+        }
+
+        return averageSquaremeter;
     }
 
     public  void getSelectedRealEstate(List<RealEstate> realEstateList, Long numberOfRooms, Long numberOfHalls) {
