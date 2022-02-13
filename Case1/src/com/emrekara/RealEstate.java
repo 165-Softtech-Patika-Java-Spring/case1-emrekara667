@@ -16,34 +16,18 @@ public class RealEstate {
     }
 
     public BigDecimal getPrice() {
-        return this.price;
-    }
-
-    public void setPrice(BigDecimal price) {
-        this.price = price;
+        return price;
     }
 
     public BigDecimal getSquareMeter() {
-        return this.squareMeter;
-    }
-
-    public void setSquareMeter(BigDecimal squareMeter) {
-        this.squareMeter = squareMeter;
+        return squareMeter;
     }
 
     public Long getNumberOfRooms() {
-        return this.numberOfRooms;
-    }
-
-    public void setNumberOfRooms(Long numberOfRooms) {
-        this.numberOfRooms = numberOfRooms;
+        return numberOfRooms;
     }
 
     public Long getNumberOfHalls() {
-        return this.numberOfHalls;
-    }
-
-    public void setNumberOfHalls(Long numberOfHalls) {
-        this.numberOfHalls = numberOfHalls;
+        return numberOfHalls;
     }
 }
